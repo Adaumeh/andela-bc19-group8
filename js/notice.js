@@ -39,6 +39,27 @@ Notice.prototype.getNotices = function() {
 	]
 };
 
+function checkFields(choice){
+
+	if (document.getElementById("pos").value === ""||document.getElementById("title").value ==="") {
+
+		alert("Please fill out all the feilds");
+
+
+	}
+
+	else
+	{
+
+		saveNotice();
+	}
+
+	
+
+
+
+}
+
 function saveNotice()
 {
 	var msg = document.getElementById("pos");
