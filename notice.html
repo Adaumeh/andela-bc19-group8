@@ -24,42 +24,41 @@
 		<div class="container" style="display:float">
 			<h1 id="notice-head" class="text-center"> The Andela Notice Board</h1>
 			<div class="row">
-				<div class="col-sm-6" >
-					<h3 class="notice-title text-center">Title of Notice<h3>
+				<div class="col-sm-4" >
+					<h3 class="notice-title text-center" id="title1">Title of Notice<h3>
 					<p class="notice-msg" id="notice-board1">Aspiring Andelans are able to identify, approach and comfortably build rapport
 							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
 								understand that establishing and strengthening relationships is valuable.</p>
 				</div>
 				
-				<div class="col-sm-6" >
-					<h3 class="notice-title text-center">Title of Notice<h3>
+				<div class="col-sm-4" >
+					<h3 class="notice-title text-center" id="title1">Title of Notice<h3>
 					<p class="notice-msg" id="notice-board2">Aspiring Andelans are able to identify, approach and comfortably build rapport
 							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
 								understand that establishing and strengthening relationships is valuable.</p>
 				</div>
-				<div class="col-sm-6" >
-					<h3 class="notice-title text-center">Title of Notice<h3>
+				<div class="col-sm-4" >
+					<h3 class="notice-title text-center" id="title1">Title of Notice<h3>
 					<p class="notice-msg" id="notice-board3">Aspiring Andelans are able to identify, approach and comfortably build rapport
 							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
 								understand that establishing and strengthening relationships is valuable.</p>
 				</div>
-				<div class="col-sm-6" >
-					<h3 class="notice-title text-center">Title of Notice<h3>
-					<p class="notice-msg"  id="notice-board4">Aspiring Andelans are able to identify, approach and comfortably build rapport
-
-							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
-								understand that establishing and strengthening relationships is valuable.</p>
+				<div class="col-sm-4" >
+					<h3 class="notice-title text-center" id="title1">Title of Notice<h3>
+					<p class="notice-msg"  id="notice-board4"></p>
 				</div>
 <script type="text/javascript" >
 					
 
-
+		var defaul_notice = "Aspiring Andelans are able to identify, approach and comfortably build rapport							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They								understand that establishing and strengthening relationships is valuable."
 		var notices = new Notice();
 		var arr = notices.getNotices();
-		//document.getElementById("notice-board1").innerHTML = arr[0].msg;
+		document.getElementById("notice-board2").innerHTML = arr[0].msg || defaul_notice;
+		document.getElementById("notice-board3").innerHTML = arr[1].msg || defaul_notice;
+		document.getElementById("notice-board4").innerHTML = arr[2].msg || defaul_notice;
 		var cer = JSON.parse(localStorage.getItem("post"));
 		
-		document.getElementById("notice-board4").innerHTML = cer.msg;
+		document.getElementById("notice-board1").innerHTML = cer.msg;
 		//alert("Hello");
 				</script>
 			</div>

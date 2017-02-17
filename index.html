@@ -2,15 +2,22 @@
 <html ng-app="notes">
 <Html>
 <head>
-<title> Introduction To Angular JS </title>
+<title> Andela Notice Board </title>
+<script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
+
+			  <script type="text/javascript" src="js/notice.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css"></link>
 
 </head>
 <Body>
  </script>
+
 <div id='main'>
-	
-	<header><h1>ADD NOTICE</h1></header>
+	<img height = '60' src='./img/andela.png'/>
+	<header><h1>ADD A NOTICE</h1></header>
 
 	<form id="form" action="#" method="POST">
 		<div>
@@ -20,7 +27,7 @@
 
 		<div>
 		<label>Message</label>
-		<textarea row="5" type ="text"  id="title" name = "Title">
+		<textarea row="5" type ="text"  id="pos" name = "Title">
 			
 		</textarea>
 		</div>
@@ -39,7 +46,7 @@
 
 
 	</form>
-	<button class="button">Send</button>
+	<button class="button" onclick="saveNotice()">Send</button>
 </div>   
 </body>
 </html>
