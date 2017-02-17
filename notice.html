@@ -7,39 +7,61 @@
 		<link rel="icon" type="image/x-icon" href="./images/andela.png">
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Quicksand|Yantramanav:900" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300|Yantramanav:900" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
+
+			  <script type="text/javascript" src="js/notice.js"></script>
+		
+
 		<title> Notice Board - Andela Nigeria </title>
 	</head>
-	<body>
-		<div class="container">
+	
+		<div class="container" style="display:float">
 			<h1 id="notice-head" class="text-center"> The Andela Notice Board</h1>
 			<div class="row">
-				<div class="col-sm-6" id="notice-board1">
+				<div class="col-sm-6" >
 					<h3 class="notice-title text-center">Title of Notice<h3>
-					<p class="notice-msg">Aspiring Andelans are able to identify, approach and comfortably build rapport
+					<p class="notice-msg" id="notice-board1">Aspiring Andelans are able to identify, approach and comfortably build rapport
 							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
 								understand that establishing and strengthening relationships is valuable.</p>
 				</div>
-				<div class="col-sm-6" id="notice-board2">
+				
+				<div class="col-sm-6" >
 					<h3 class="notice-title text-center">Title of Notice<h3>
-					<p class="notice-msg">Aspiring Andelans are able to identify, approach and comfortably build rapport
+					<p class="notice-msg" id="notice-board2">Aspiring Andelans are able to identify, approach and comfortably build rapport
 							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
 								understand that establishing and strengthening relationships is valuable.</p>
 				</div>
-				<div class="col-sm-6" id="notice-board3">
+				<div class="col-sm-6" >
 					<h3 class="notice-title text-center">Title of Notice<h3>
-					<p class="notice-msg">Aspiring Andelans are able to identify, approach and comfortably build rapport
+					<p class="notice-msg" id="notice-board3">Aspiring Andelans are able to identify, approach and comfortably build rapport
 							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
 								understand that establishing and strengthening relationships is valuable.</p>
 				</div>
-				<div class="col-sm-6" id="notice-board4">
+				<div class="col-sm-6" >
 					<h3 class="notice-title text-center">Title of Notice<h3>
-					<p class="notice-msg">Aspiring Andelans are able to identify, approach and comfortably build rapport
-							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
-								understand that establishing and strengthening relationships is valuable.</p>
-				</div>
+					<p class="notice-msg"  id="notice-board4">Aspiring Andelans are able to identify, approach and comfortably build rapport
 
+							with Bootcampers, Fellows, Trainers, and Staff members at Andela. They
+								understand that establishing and strengthening relationships is valuable.</p>
+				</div>
+<script type="text/javascript" >
+					
+
+
+		var notices = new Notice();
+		var arr = notices.getNotices();
+		//document.getElementById("notice-board1").innerHTML = arr[0].msg;
+		var cer = JSON.parse(localStorage.getItem("post"));
+		
+		document.getElementById("notice-board4").innerHTML = cer.msg;
+		//alert("Hello");
+				</script>
 			</div>
 		</div>
 	</body>
