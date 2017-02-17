@@ -1,8 +1,21 @@
 #notice-head {
-	margin: 20px auto;
+	margin-top: 30px;
 	font-family: 'Yantramanav', sans-serif;
 
 }
+
+.notice-title {
+	margin-top: 30px;
+	font: bold 2em 'Quicksand', sans-serif;
+}
+
+.notice-msg {
+	font: 1em 'Quicksand', sans-serif;	
+	margin: 10px;
+	padding: 20px 10px;
+	border-top: 2px solid blue;
+}
+
 body {
 	font-size: 15px;
 	background: lightblue;
