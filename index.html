@@ -36,7 +36,7 @@
 		
 		</div>
 		
-		 <select name="Audience">
+		 <select id="group1" name="Audience">
 			  <option value="post2">Andela Lagos</option>
 			  <option value="post3">Lagos Fellows</option>
 			  <option value="post4">Lagos Staff</option>
@@ -46,7 +46,8 @@
 
 
 	</form>
-	<button class="button" onclick="saveNotice()">Send</button>
+	<button class="button" onclick="saveNotice()" id="sendBtn">Send</button>
+	<button class="button" id="viewAll" onclick="location.href = 'notice.html'">View Notice Board</button>
 </div>   
 </body>
 </html>
