@@ -3,3 +3,32 @@
 	font-family: 'Yantramanav', sans-serif;
 
 }
+body {
+	font-size: 15px;
+	background: lightblue;
+}
+
+#main {
+	
+	text-align: center;
+	display: block;
+	float: none;
+	padding: 20px;
+}
+
+h1 {
+	margin: 30px;
+	color: white;
+
+}
+
+.class {
+	display: block;
+}
+
+div {
+	float: none;
+	display: block;
+	text-align: center;
+	margin: 30px;
+}
