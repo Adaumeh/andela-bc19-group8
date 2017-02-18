@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+
+<html ng-app="notes">
+<head>
+  <title>Andela.com | Notice</title>
+  <script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous">  	
+			</script>
+			<script type="text/javascript" src="js/notice.js"></script>
+  <link href="main.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+<div id="logo">
+  <img src="Andela.png" />
+</div>
+
+<div id='main'>
+
+    <header><h3>Add Notice</h3></header>
+    <form id="form" action="#" method="POST">
+
+        <div class="inner">
+
+            <input placeholder="Title" type = 'input'  id="title" name = "Title"/>
+        </div>
+
+        <div class="inner">
+
+            <textarea placeholder="Message" type ="text"  id="pos" name = "Title"></textarea>
+        </div>
+
+      <div  class="inner" id="group1">
+        <select name="Audience">
+              <option value='none'>Select Audience</option>
+
+              <option value="post2">Andela Lagos</option>
+
+              <option value="post3">Lagos Fellows</option>
+
+              <option value="post4">Lagos Staff</option>
+
+              <option value="post5">Department</option>
+
+              <option value="post5">Employee</option>
+
+        </select>
+      </div>
+    </form>
+
+    <button class="button" onclick="checkFields()" id="sendBtn">Send</button>
+			<button class="button" id="viewAll" onclick="location.href = 'notice.html'">View Notice Board</button>
+
+</div>
+</body>
+</html>
